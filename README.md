@@ -9,4 +9,15 @@ Healthcare fraud and abuse take many forms. Some of the most common types that p
 * Unbundling. Providers unbundling or billing separately for laboratory tests to get higher reimbursements.
 * False price reporting. Providers charging more than peers for the same services.
 ## Medicare claims dataset
-The dataset in this project comes from Kaggle's website - [Healthcare Provider Fraud Dection Analysis](https://www.kaggle.com/datasets/rohitrox/healthcare-provider-fraud-detection-analysis) by Rohit Anand Gupta. The dataset consist of four sub-datasets, including Provider, Inpatient, Outpatient and Beneficiary.
+The dataset in this project comes from Kaggle's website - [Healthcare Provider Fraud Dection Analysis](https://www.kaggle.com/datasets/rohitrox/healthcare-provider-fraud-detection-analysis) by Rohit Anand Gupta. The dataset consists of four sub-datasets, as listed below.
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/d967824e-a734-47cc-aee7-a16661925770)
+## Workflow
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6b7a5707-10f0-4a5a-8682-1b3ea0d71c41)
+## Data Preporcessing
+Before discussing the extensive data analysis performed on the claims data, I would like to explain how the data was preprocessed. First, handling missing values in the data. Missing information should be imputed accordingly. we also can enrich data informantion by creating new features. For example, in benificiaries dataset, the date of death was missing if a patient was alive,  and in inpatient dataset. I create two new features 'if-alive' and 'Age' using the date of birth and death. 
+Next, categorical data was label-encoded for uniform and efficient preprocessing.
+
+I decided to keep outliers in the data because they could provide key fraud indicator information. These outliers could represent transactions where actual fraud is being committed. For this reason, the data was robustly scaled before modeling. Another important preprocessing step was upsampling the data to reduce the imbalance and bring the fraud label ratio to 1:1. The data was processed using two upsampling techniques: SMOTE, which creates data randomly between two data points, and BorderlineSMOTE, which creates data along the decision boundary between the two classes. The performances of both techniques were compared.
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/c5084b59-a48f-4eda-ab5e-b6b2e53dd2ea)
+# Exploratory Data Analysis
+
