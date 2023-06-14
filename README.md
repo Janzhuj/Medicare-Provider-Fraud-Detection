@@ -23,10 +23,10 @@ Another important preprocessing step was resampling the imbalanced data to make 
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/c5084b59-a48f-4eda-ab5e-b6b2e53dd2ea)
 
 ## Exploratory Data Analysis
-###1. Class Labels
+### 1. Class Labels
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/8983b33c-d1ba-4a33-8597-26fade422881)
 
-###2. Beneficiary Basic Information Study
+### 2. Beneficiary Basic Information Study
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/bf76c4be-352d-455f-bef9-26d3a52f6fe6)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6046aa3a-e186-4d31-af4e-3ce099989426)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/239c23cc-271f-4a15-8c9d-5f24250c085c)
@@ -34,7 +34,7 @@ Another important preprocessing step was resampling the imbalanced data to make 
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/1fb613ce-a4b8-433c-83aa-fd229e5b0701)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/9c6c166c-feea-415c-8643-593f87bd09ec)
 
-###3. fraud VS. Non-fraud Providers Study
+### 3. fraud VS. Non-fraud Providers Study
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/a63335c5-ded3-4185-9f79-75dbe7087ae1)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/dd327004-7eb8-49bd-a058-afc18c4aec8e)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/c75aa2bf-0a27-481e-ac23-1232d68fe0ba)
