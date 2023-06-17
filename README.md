@@ -44,9 +44,13 @@ Before we proceed, let’s take a look at our patients. We notice that the major
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/9c6c166c-feea-415c-8643-593f87bd09ec)
 
 ### 3. fraud VS. Non-fraud Providers Study
+Now, let’s explore the characteristics of fraudulent providers. We know that if the median line of a box plot lies outside the box of a comparison box plot, then there is likely to be a difference between the two groups. When comparing the box plots of characteristics, like claim numbers, beneficiary numbers, diagnose code numbers, and hospital duration variation, we find that there are obvious differences between fraudulent and non-fraudulent providers. 
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/a63335c5-ded3-4185-9f79-75dbe7087ae1)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/dd327004-7eb8-49bd-a058-afc18c4aec8e)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/c75aa2bf-0a27-481e-ac23-1232d68fe0ba)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/05c862d4-683a-4af8-b367-d79febcf4032)
+
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/edf782f1-6ece-4a76-8fc7-518f95492f37)
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/df28a561-8d1c-4fa6-a2cb-7c088c3ad9e7)
 
  
