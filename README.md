@@ -25,23 +25,23 @@ Another important preprocessing step was resampling the imbalanced data to make 
 ## Exploratory Data Analysis
 ### 1. Class Labels
 Let’s take a look at the provider class dataset. It is an imbalanced dataset where the target variable, “Potential Fraud,” has 90.6% of providers not fraudulent and 9.6% of providers fraudulent. Notice, at the model evlaluation section, we will use metrics like precision, recall, F1-score rather than the accuracy metric to understand the performance of the classifiers for correctly determining which provider is fraudulent, since class distribution is high skewed, the accuracy metric is biased and not preferable to evlauate the model performance.
-<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/8983b33c-d1ba-4a33-8597-26fade422881" width=80% height=80%>
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/8983b33c-d1ba-4a33-8597-26fade422881" width=60% height=60%>
 
 ### 2. Beneficiary Basic Information Study
 
 Before we proceed, let’s take a look at our patients. We notice that the majority of our beneficiaries belong to race 0. The percentage of gender 0 is larger than that of gender 1. Fifty percent of beneficiaries fall between the ages of 68 and 82 years old, with some outliers below 47 who are disabled. The chronic disease risk scores display a bell-like shape with a slight right tail. There is a positive relationship between the mean annual reimbursement amount and the chronic disease risk scores of beneficiaries.
 
-<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/bf76c4be-352d-455f-bef9-26d3a52f6fe6" width=80% height=80%>
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/bf76c4be-352d-455f-bef9-26d3a52f6fe6" width=60% height=60%>
 
-<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6046aa3a-e186-4d31-af4e-3ce099989426" width=80% height=80%>
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6046aa3a-e186-4d31-af4e-3ce099989426" width=60% height=60%>
 
-![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/239c23cc-271f-4a15-8c9d-5f24250c085c)
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/239c23cc-271f-4a15-8c9d-5f24250c085c" width=60% height=60%>
 
-<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/5edc2cdd-83be-4651-93fb-0322a3da170a" width=80% height=80%>
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/5edc2cdd-83be-4651-93fb-0322a3da170a" width=60% height=60%>
 
-![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/1fb613ce-a4b8-433c-83aa-fd229e5b0701)
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/1fb613ce-a4b8-433c-83aa-fd229e5b0701" width=60% height=60%>
 
-![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/9c6c166c-feea-415c-8643-593f87bd09ec)
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/9c6c166c-feea-415c-8643-593f87bd09ec" width=60% height=60%>
 
 ### 3. fraud VS. Non-fraud Providers Study
 Now, let’s explore the characteristics of fraudulent providers. We know that if the median line of a box plot lies outside the box of a comparison box plot, then there is likely to be a difference between the two groups. When comparing the box plots of characteristics, like claim numbers, beneficiary numbers, diagnose code numbers, and hospital duration variation, we find that there are obvious differences between fraudulent and non-fraudulent providers. 
@@ -53,4 +53,21 @@ Now, let’s explore the characteristics of fraudulent providers. We know that i
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/edf782f1-6ece-4a76-8fc7-518f95492f37)
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/df28a561-8d1c-4fa6-a2cb-7c088c3ad9e7)
 
- 
+## Data Modeling
+
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/a5c0ae26-62c8-4da6-8927-2d5d9c228e00" width=60% height=60%>
+
+### 1. Feature Selection
+In this section, I will pipleline classifiers and feature selection method to build the base algorithms.  I choose RFE method for feature selection, and tune the hyperparameters of RFE to obtian the best number of features, as showed in the below,  the number 41 is the best number of features for both logistic regression and random forest algorithms.
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/bd7e8b12-1e8c-4509-a753-f58bc1737786)
+
+### 2. Explore Base Algorithm
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/013ccd09-39b4-467a-a957-39a7b5b59c19)
+
+### 3. Base Algorithm comparison
+Logistic Regression, Support Vector Machine, and Random Forest classifiers generally perform well. While the mean performance of the Gradient Boosting classifier appears good, its F1_weighted score has a relatively larger variance compared to the others. This may result in less stable results.
+
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6cd8af96-a576-4d05-9a55-99c53bf07a60" width=60% height=60%>
+
+
+
