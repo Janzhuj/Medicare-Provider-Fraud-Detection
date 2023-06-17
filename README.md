@@ -69,5 +69,13 @@ Logistic Regression, Support Vector Machine, and Random Forest classifiers gener
 
 <img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6cd8af96-a576-4d05-9a55-99c53bf07a60" width=60% height=60%>
 
+## Optimization Models
+### 1. Tune Hyperparameters
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/6fa5766a-5f8c-4d05-9d75-2c716b674ede" width=60% height=60%>
+
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/2f04f20e-ec8f-4cd9-a995-4d52e9fb1169" width=60% height=60%>
+
+### 2 Learning Curves
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/797fb576-9a63-40e7-a9e7-8839524b3d8f)
 
 
