@@ -78,4 +78,28 @@ Logistic Regression, Support Vector Machine, and Random Forest classifiers gener
 ### 2 Learning Curves
 ![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/797fb576-9a63-40e7-a9e7-8839524b3d8f)
 
+### 3. Evaluation Metrics for Imbalanced Data
+A comparative analysis was performed on the dataset using four classifier models: Logistic Regression, Random Forest, Linear Support Vector Machine, and Gradient Boosting. As discussed earlier, we will ignore the accuracy metric to evaluate the performance of the classifiers on this imbalanced dataset. Here, we are more interested in identifying potential fraudulent providers. Therefore, we will focus on metrics such as precision, recall, and F1-score to understand the performance of the classifiers in correctly determining which providers will commit fraud in the insurance claim process.
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/54bcb2d7-53e2-49d6-a765-de212f4d0c03" width=60% height=60%>
+
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/84c1f0d6-e33d-4072-b99f-a05ccb83f3bb)
+
+### 4. Maximize Minority’s Recall Scores
+From the above, it can be seen that all 4 classifier models were not able to generalize well on the minority class compared to the majority class. To minimize fraudulent providers incorrectly classified as non-faudulent providers (False Negative), we can use SMOTE related technolege to imporve recall scores of the minority class. As shown in below, after resampling, a clear surge in Recall is seen on the test data.
+
+<img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/aa10e721-aefe-40c1-9338-eac0d527e81f" width=80% height=80%>
+
+### 5. Feature Importances
+Machine Learning models are often black boxes, making their interpretation difficult. SHAP values (SHapley Additive exPlanations) is one method used to explain how each feature affects the model. The following plots show the main features affecting the prediction of the observations and the magnitude of the SHAP value for each feature. Here, I used shap__value[0], the SHAP values for class 0. The SHAP values for class 1 are symmetrical to them.
+
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/ae920f28-fc1f-487e-8822-9d43c31d4bd3)
+
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/7da6b9d9-3bdd-4eb8-bed5-53754a78279d)
+
+## Conclusion
+![image](https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/37255c3f-0780-486b-bb49-02317667a4bf)
+
+
+
+
 
