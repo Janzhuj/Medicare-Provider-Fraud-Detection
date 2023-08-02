@@ -24,7 +24,7 @@ Another important preprocessing step was resampling the imbalanced data to make 
 
 ## Exploratory Data Analysis
 ### 1. Class Labels
-Let’s take a look at the provider class dataset. It is an imbalanced dataset where the target variable, “Potential Fraud,” has 90.6% of providers not fraudulent and 9.6% of providers fraudulent.Let’s take a look at the provider class dataset. It is an imbalanced dataset where the target variable, “Potential Fraud,” has 90.6% of providers not fraudulent and 9.6% of providers fraudulent. The dataset is is high imbalanced, the accuracy metric is biased and not preferable to evlauate the model performance. At the model evlaluation section, we will use metrics like precision, recall, F1-score rather than the accuracy metric to evaluate the performance of the classifiers. 
+Let’s take a look at the provider class dataset. It is an imbalanced dataset where the target variable, “Potential Fraud,” has 90.6% of providers not fraudulent and 9.6% of providers fraudulent.Let’s take a look at the provider class dataset. It is an imbalanced dataset where the target variable, “Potential Fraud,” has 90.6% of providers not fraudulent and 9.6% of providers fraudulent. The accuracy metric is not preferable to evlauate the model performance for imbalanced class labels. At the model evlaluation section, we will use metrics like precision, recall, F1-score rather than the accuracy metric to evaluate the performance of the classifiers. 
 
 <img src="https://github.com/Janzhuj/Medicare-Provider-Fraud-Detection/assets/99841253/8983b33c-d1ba-4a33-8597-26fade422881" width=60% height=60%>
 
